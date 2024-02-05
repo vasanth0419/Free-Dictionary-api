@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+/* search box */
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.search input {
+  width: 70%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(134, 92, 180);
+}
+.search button {
+  padding: 5px 0;
+  width: 25%;
+  background-color: rgb(26, 129, 26);
+  color: white;
+  border-radius: 30px;
+}
+.heading {
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+/*  main-container */
+.container {
+  top: 50%;
+  background-color: white;
+  border-radius: 30px;
+  width: 50vw !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+.search input:valid ~ span {
+  display: block;
+}
+
+.wrapper.active ul {
+  display: block;
+}
+
+.wrapper.active .info-text {
+  display: none;
+}
+
+.wrapper .info-text {
+  margin: 15px;
+  font-size: 13px;
+  color: #9a9a9a;
+  transition: all 0.3s ease;
+  text-align: center;
+  justify-content: center !important;
+
+  padding-bottom: 20px;
+}
+
+.info-text span {
+  font-weight: 500;
+}
+
+.wrapper ul {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+ul .content {
+  max-height: 215px;
+  overflow-y: auto;
+}
+
+ul .content::-webkit-scrollbar {
+  width: 0;
+}
+
+.wrapper ul li {
+  display: flex;
+  margin-bottom: 14px;
+  padding-bottom: 17px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper ul li:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul .word p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+ul .word span {
+  font-size: 12px;
+  color: #989898;
+}
+
+ul .word i {
+  cursor: pointer;
+  font-size: 15px;
+  color: #999;
+}
+
+.content li .details {
+  padding-left: 10px;
+  border-radius: 4px 0 0 4px;
+  border-left: 3px solid #4d59fb;
+}
+
+.content li p {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.content li span {
+  font-size: 15px;
+  color: #7e7e7e;
+}
+
+.synonyms .details .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.synonyms .details .list span {
+  margin-right: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
